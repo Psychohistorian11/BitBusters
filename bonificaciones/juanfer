@@ -1,7 +1,0 @@
-def longitud(cadena):
-  if len(cadena) == 1:
-    return cadena
-  else:
-    return longitud(cadena[1:]) + cadena[0]
-
-longitud("juanfe")
