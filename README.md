@@ -1,7 +1,7 @@
 
 # BitBusters 👾
 
-This repository contains the work of the BitBusters team for the Analisis Y Diseño de Algoritmos  UdeM subject 🤓.
+This repository contains the work of the BitBusters team for the Análisis Y Diseño de Algoritmos  UdeM subject 🤓.
 
 ## Team members 👨‍👩‍👦‍👦
 
