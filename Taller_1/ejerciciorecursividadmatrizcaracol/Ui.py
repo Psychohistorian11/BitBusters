@@ -8,8 +8,9 @@ class InterfazConsola:
         🎮 Menú Principal 🎮
 
 1. ➕ Definir dimensiones de la matriz
-2. ✏️ Recorrer Matriz en forma de caracol
-3. 🚪 Salir
+2. ✏️ Recorrer Matriz en forma de caracol EXTRA
+3. ✏️ Recorrer Matriz en forma de caracol (Ejercicio taller Análisis) 
+4. 🚪 Salir
 """)
     def crear_matriz(self,filas,columnas):
         if filas > 0 and columnas> 0:
@@ -28,6 +29,8 @@ class InterfazConsola:
             return 1
         elif answer == 3:
             return 2
+        elif answer == 4:
+            return 3
 
     def correr(self):
         while True:
@@ -39,8 +42,13 @@ class InterfazConsola:
                 print("\n")
                 self.crear_matriz(filas,columnas)
             elif opcion ==1:
-                self.programa.recorrerMatrizEspiral()
+                arreglo = self.programa.recorrerMatrizEspiral()
+                print("El resultado del recorrido es ", arreglo)
             elif opcion ==2:
+                arreglo= self.programa.recorrerMatrizEspiral_Analisis(0,self.programa.obtenerNumeroColumnas()-1)
+                arreglo = self.programa.revertir_arreglo(arreglo)
+                print(f"El resultado es {arreglo}")
+            elif opcion ==3:
                 break
             else:
                 print("Ingresa una opción valida")
