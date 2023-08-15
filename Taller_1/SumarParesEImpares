@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMWMcb4HXBaYY6saiot0lQd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Psychohistorian11/BitBusters/blob/master/Taller_1/SumarParesEImpares\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "UgW_4tr4W6RQ"
+      },
+      "outputs": [],
+      "source": [
+        "def sumar(num_inicio, num_final):\n",
+        "    sumaPar = 0\n",
+        "    sumaImpar = 0\n",
+        "    for numero in range(num_inicio, num_final+1):\n",
+        "        if numero % 2 == 0:\n",
+        "            sumaPar += numero\n",
+        "        else:\n",
+        "            sumaImpar += numero\n",
+        "    print(sumaPar)\n",
+        "    print(sumaImpar)\n",
+        "\n",
+        "sumar(4,15)\n"
+      ]
+    }
+  ]
+}
