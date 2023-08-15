@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMWMcb4HXBaYY6saiot0lQd",
+      "authorship_tag": "ABX9TyNcQhRI9d1Gj+AGfcWzmkQB",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,24 +28,38 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 3,
       "metadata": {
-        "id": "UgW_4tr4W6RQ"
+        "id": "UgW_4tr4W6RQ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "603ceec2-b1c1-4f38-fc0b-ed77d88769aa"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Esta es la suma de los pares 12\n",
+            "Esta es la suma de los Impares 8\n"
+          ]
+        }
+      ],
       "source": [
-        "def sumar(num_inicio, num_final):\n",
-        "    sumaPar = 0\n",
-        "    sumaImpar = 0\n",
-        "    for numero in range(num_inicio, num_final+1):\n",
-        "        if numero % 2 == 0:\n",
-        "            sumaPar += numero\n",
-        "        else:\n",
-        "            sumaImpar += numero\n",
-        "    print(sumaPar)\n",
-        "    print(sumaImpar)\n",
+        "def sumarParesImpares(num_inicio, num_final, sumaPar=0, sumaImpar=0):\n",
+        "    if num_inicio == num_final:\n",
+        "        if num_inicio % 2 == 0:\n",
+        "            return num_inicio + sumaPar, sumaImpar\n",
+        "        return sumaPar, num_inicio + sumaImpar\n",
+        "    else:\n",
+        "        if num_inicio % 2 == 0:\n",
+        "            return sumarParesImpares(num_inicio+1, num_final, sumaPar+num_inicio, sumaImpar)\n",
+        "        return sumarParesImpares(num_inicio+1, num_final, sumaPar, sumaImpar+num_inicio)\n",
         "\n",
-        "sumar(4,15)\n"
+        "sumaPar, sumaImpar = sumarParesImpares(2,6)\n",
+        "print(f\"Esta es la suma de los pares {sumaPar}\")\n",
+        "print(f\"Esta es la suma de los Impares {sumaImpar}\")\n"
       ]
     }
   ]
