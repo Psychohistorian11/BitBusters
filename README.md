@@ -8,7 +8,7 @@ This repository contains the work of the BitBusters team for the Análisis Y Dis
 -   Cristian Franco Raigosa 👨‍💼
 -   Diego Alejandro Murillo 👨‍💼
 -   Juan Esteban Valdés 👨‍💼
--   Keiner Andres Corcho👨‍💼
+-   Kenier Andres Corcho👨‍💼
 -   Juan Fernando Alvarez 👨‍💼
 
 ## Structure 💡
