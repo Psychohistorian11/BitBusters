@@ -25,6 +25,8 @@ print("primero",num,num2)
 
 # 2do ------------
 def optimo(n, contador=1, operacion=1):
+  if n==0:
+    return 0
   if operacion == n:
     return contador
   if operacion > n:
@@ -37,5 +39,4 @@ def optimo(n, contador=1, operacion=1):
     return izquierda
   return min(izquierda, derecha)
 
-
-print("segundo",optimo(10))
+print("segundo",optimo(0))
