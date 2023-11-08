@@ -1,0 +1,9 @@
+Conclusiones
+
+No deberíamos volver a hacerlo, al menos no con páginas que no están hechas para eso.
+
+Durante las pruebas se presentaron algunos errores: Remote end closed connection without response	y [Errno 101] Network is unreachable.
+Sin embargo, no consideramos que los errores sean exagerados.
+
+El tiempo promedio para cargar la página de inicio varió mucho, con tiempos entre 6.5 y 7.3 segundos. 
+En cuanto a la página "/medios-de-pago", los tiempos fueron aún más largos, llegando a 10 segundos en algunos casos.
